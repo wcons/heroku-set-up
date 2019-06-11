@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   # RESTful routes
   resources :examples, except: %i[new edit]
 
-  # Custom routes
+  # Books routes
+  get '/users' => 'users#index'
+
+  # Auth routes
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'
   delete '/sign-out' => 'users#signout'
