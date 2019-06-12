@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class BooksController < ApplicationController
+class BooksController < OpenReadController
   before_action :set_book, only: %i[show update destroy]
 
   # GET /books
@@ -17,7 +17,7 @@ class BooksController < ApplicationController
 
   # POST /books
   def create
-    @book = Book.new(book_params)
+    @book = current_user.books.build(book_params)
 
     if @book.save
       render json: @book, status: :created, location: @book
@@ -49,6 +49,6 @@ class BooksController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def book_params
-    params.require(:book).permit(:title, :author, :year_published, :user_id)
+    params.require(:book).permit(:title, :author, :year_published)
   end
 end
