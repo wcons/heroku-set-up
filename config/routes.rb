@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   resources :examples, except: %i[new edit]
 
   # Books routes
-  get '/users' => 'users#index'
+  # get '/books' => 'books#index'
+  # delete 'books/:id' => 'books#destroy'
+  # patch 'books/:id' => 'books#update'
+  # post 'books/' => 'books#create'
 
   # Auth routes
   post '/sign-up' => 'users#signup'

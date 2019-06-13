@@ -9,8 +9,7 @@ curl "http://localhost:4741/books/${ID}" \
     "book": {
       "title": "'"${TITLE}"'",
       "author": "'"${AUTHOR}"'",
-      "year_published": "'"${YP}"'",
-      "user_id": "'"${USERID}"'"
+      "year_published": "'"${YP}"'"
     }
   }'
 

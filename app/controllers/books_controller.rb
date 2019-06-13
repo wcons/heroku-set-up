@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-# test
 
 class BooksController < OpenReadController
   before_action :set_book, only: %i[show update destroy]
