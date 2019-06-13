@@ -1,4 +1,5 @@
-(Deployed application)[]
+https://wcons.github.io/book-tracker-client/
+https://infinite-reaches-30575.herokuapp.com/
 
 *Technologies Used*
 
