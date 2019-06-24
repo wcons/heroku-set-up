@@ -2,6 +2,7 @@ https://wcons.github.io/book-tracker-client/
 
 https://infinite-reaches-30575.herokuapp.com/
 
+
 ### Application Description
 
 This application allows a user to keep track of their own list of books.
@@ -29,4 +30,5 @@ I originally chose a different idea, but decided to narrow my scope and keep it 
 I used the suggested schedule for the project, which was very helpful.
 
 #### Link to ERD
+
 https://i.imgur.com/HXNeYIM.jpg
