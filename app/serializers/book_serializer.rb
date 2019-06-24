@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 class BookSerializer < ActiveModel::Serializer
-  attributes :id, :title, :author, :year_published
+  attributes :id, :title, :author, :year_published, :user_id
 end
